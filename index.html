@@ -1,214 +1,839 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>애니 매니아 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #2563eb;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍대 코인노래방 가이드 | 최신 시설 & 가격 정보</title>
+    <meta name="description" content="홍대 코인노래방 완벽 가이드: 2025년 최신 시설, 가격 비교, 위치 정보를 전문적으로 분석합니다. 신뢰도 높은 데이터로 홍대 최적의 코인노래방을 추천합니다.">
+    <meta name="keywords" content="홍대 코인노래방, 홍대 노래방, 코인노래방 추천, 홍대 가성비 노래방, 홍대 코인노래방 가격, 홍대 코인노래방 위치, 홍대 노래방 가이드">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <link rel="canonical" href="https://t3b07-hd-coin-guide-2.vercel.app/">
+    <meta property="og:title" content="홍대 코인노래방 가이드 | 최신 시설 & 가격 정보">
+    <meta property="og:description" content="홍대 코인노래방 완벽 가이드: 2025년 최신 시설, 가격 비교, 위치 정보를 전문적으로 분석합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b07-hd-coin-guide-2.vercel.app/">
+    <meta property="og:image" content="https://t3b07-hd-coin-guide-2.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="홍대 코인노래방 가이드 | 최신 시설 & 가격 정보">
+    <meta name="twitter:description" content="홍대 코인노래방 완벽 가이드: 2025년 최신 시설, 가격 비교, 위치 정보를 전문적으로 분석합니다.">
+    <meta name="twitter:image" content="https://t3b07-hd-coin-guide-2.vercel.app/og-image.jpg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "홍대 코인노래방 가이드",
+        "description": "홍대 지역 코인노래방 정보를 제공하는 가이드 사이트입니다.",
+        "url": "https://t3b07-hd-coin-guide-2.vercel.app/",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울",
+            "addressRegion": "마포구",
+            "addressCountry": "KR"
+        },
+        "areaServed": "홍대",
+        "priceRange": "₩1,000-₩4,000"
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.8;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #111111;
+            color: #ffff00;
+            font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(255, 255, 0, 0.02) 0px,
+                rgba(255, 255, 0, 0.02) 2px,
+                transparent 2px,
+                transparent 4px
+            );
+            pointer-events: none;
+            z-index: 9999;
+        }
+        .container {
+            max-width: 100%;
+            padding: 72px 72px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 36px 24px;
+            }
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+            color: #ffff00;
+        }
+        h1 {
+            font-size: 5rem;
+            line-height: 0.85;
+            margin-bottom: 24px;
+            transform: rotate(-2deg);
+            transform-origin: left center;
+            border-left: 6px solid #00ff41;
+            padding-left: 24px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+                transform: rotate(-1deg);
+                padding-left: 16px;
+            }
+        }
+        h2 {
+            font-size: 3.5rem;
+            margin-bottom: 48px;
+            border-bottom: 4px solid #00ff41;
+            padding-bottom: 16px;
+            display: inline-block;
+            transform: skewX(-3deg);
+        }
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2.2rem;
+                transform: skewX(-2deg);
+                margin-bottom: 36px;
+            }
+        }
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            color: #00ff41;
+        }
+        p, li, a, blockquote {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1rem;
+        }
+        a {
+            color: #00ff41;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-thickness: 2px;
+        }
+        a:hover {
+            color: #ffff00;
+            background-color: #111111;
+            border: 2px solid #00ff41;
+            padding: 2px 4px;
+        }
+        header {
+            padding: 48px 72px;
+            border-bottom: 6px solid #00ff41;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            background: #111111;
+            position: relative;
+            z-index: 100;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 24px 24px;
+            }
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            font-family: 'Impact', sans-serif;
+            color: #ffff00;
+            text-decoration: none;
+            border: 4px solid #ffff00;
+            padding: 8px 16px;
+            transform: rotate(1deg);
+            display: inline-block;
+        }
+        .logo:hover {
+            background: #ffff00;
+            color: #111111;
+            border-color: #00ff41;
+        }
+        nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        nav a {
+            color: #ffff00;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 8px 12px;
+            border: 3px solid transparent;
+            transition: none;
+        }
+        nav a:hover {
+            border-color: #00ff41;
+            background: transparent;
+            color: #00ff41;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: transparent;
+            border: 3px solid #ffff00;
+            padding: 10px 12px;
+            cursor: pointer;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #ffff00;
+        }
+        .hamburger.active {
+            border-color: #00ff41;
+        }
+        .hamburger.active span {
+            background: #00ff41;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 12px;
+                padding: 24px 0;
+                border-top: 4px solid #00ff41;
+                margin-top: 16px;
+            }
+            nav.open {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+        .hero {
+            padding: 120px 72px;
+            background: #111111;
+            border-bottom: 6px solid #ffff00;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0,255,65,0.15) 0%, transparent 70%);
+            transform: rotate(15deg);
+            z-index: 0;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                padding: 72px 24px;
+            }
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 100%;
+        }
+        .hero p {
+            font-size: 1.4rem;
+            color: #ffff00;
+            max-width: 800px;
+            margin-bottom: 48px;
+            border-left: 4px solid #00ff41;
+            padding-left: 24px;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 48px;
+            flex-wrap: wrap;
+            margin-top: 48px;
+        }
+        .hero-stat {
+            border: 4px solid #00ff41;
+            padding: 24px 32px;
+            transform: rotate(1deg);
+            background: #111111;
+        }
+        .hero-stat:nth-child(2) {
+            transform: rotate(-2deg);
+        }
+        .hero-stat:nth-child(3) {
+            transform: rotate(1.5deg);
+        }
+        .hero-stat span {
+            display: block;
+            font-size: 3rem;
+            font-family: 'Impact', sans-serif;
+            line-height: 1;
+            color: #00ff41;
+        }
+        .hero-stat small {
+            font-size: 1rem;
+            color: #ffff00;
+            display: block;
+            margin-top: 8px;
+        }
+        @media (max-width: 768px) {
+            .hero-stats {
+                gap: 24px;
+            }
+            .hero-stat {
+                padding: 16px 20px;
+            }
+            .hero-stat span {
+                font-size: 2rem;
+            }
+        }
+        .section {
+            padding: 120px 72px;
+            border-bottom: 4px solid #00ff41;
+            position: relative;
+        }
+        .section:nth-child(even) {
+            border-bottom-color: #ffff00;
+        }
+        @media (max-width: 768px) {
+            .section {
+                padding: 72px 24px;
+            }
+        }
+        .section:last-of-type {
+            border-bottom: none;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: 36px;
+            }
+        }
+        .card {
+            border: 4px solid #ffff00;
+            padding: 32px;
+            background: #111111;
+            position: relative;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            width: 24px;
+            height: 24px;
+            background: #00ff41;
+            z-index: -1;
+        }
+        .card h3 {
+            margin-bottom: 16px;
+            border-bottom: 2px solid #00ff41;
+            padding-bottom: 8px;
+        }
+        .card p, .card li {
+            color: #ffff00;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,0,0.2);
+        }
+        .card ul li::before {
+            content: '▶ ';
+            color: #00ff41;
+        }
+        .review-card {
+            border: 4px solid #00ff41;
+            padding: 32px;
+            background: #111111;
+            transform: rotate(-1deg);
+            margin-bottom: 48px;
+        }
+        .review-card:nth-child(even) {
+            transform: rotate(1deg);
+            border-color: #ffff00;
+        }
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .review-header .nickname {
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #00ff41;
+        }
+        .review-header .date {
+            font-size: 0.9rem;
+            color: #ffff00;
+            opacity: 0.7;
+        }
+        .stars {
+            color: #ffff00;
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+        }
+        .stars .empty {
+            color: #333;
+        }
+        .review-text {
+            font-size: 1.05rem;
+            color: #ffff00;
+            border-left: 3px solid #00ff41;
+            padding-left: 16px;
+        }
+        .btn {
+            display: inline-block;
+            background: #ffff00;
+            color: #111111;
+            font-family: 'Impact', sans-serif;
+            font-size: 1.3rem;
+            padding: 16px 32px;
+            border: 4px solid #00ff41;
+            text-decoration: none;
+            text-transform: uppercase;
+            transform: rotate(-1deg);
+            transition: none;
+        }
+        .btn:hover {
+            background: #00ff41;
+            border-color: #ffff00;
+            color: #111111;
+            transform: rotate(1deg);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #00ff41;
+            border-color: #ffff00;
+        }
+        .btn-secondary:hover {
+            background: #ffff00;
+            color: #111111;
+        }
+        .phone-block {
+            background: #111111;
+            border: 6px solid #ffff00;
+            padding: 48px;
+            text-align: center;
+            margin: 48px 0;
+            transform: rotate(1deg);
+        }
+        .phone-block a {
+            font-size: 3rem;
+            font-family: 'Impact', sans-serif;
+            color: #00ff41;
+            text-decoration: none;
+            border-bottom: 4px solid #00ff41;
+        }
+        .phone-block a:hover {
+            background: #00ff41;
+            color: #111111;
+            border-color: #ffff00;
+        }
+        @media (max-width: 768px) {
+            .phone-block a {
+                font-size: 2rem;
+            }
+            .phone-block {
+                padding: 32px 16px;
+            }
+        }
+        .price-table {
+            border: 4px solid #ffff00;
+            overflow: hidden;
+            margin: 48px 0;
+        }
+        .price-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-bottom: 2px solid #00ff41;
+            padding: 16px 24px;
+            font-size: 1.1rem;
+        }
+        .price-row:last-child {
+            border-bottom: none;
+        }
+        .price-row.header {
+            background: #ffff00;
+            color: #111111;
+            font-weight: bold;
+            font-family: 'Impact', sans-serif;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+        }
+        .price-row:nth-child(even):not(.header) {
+            background: rgba(0, 255, 65, 0.05);
+        }
+        @media (max-width: 768px) {
+            .price-row {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                padding: 16px;
+            }
+            .price-row.header {
+                display: none;
+            }
+            .price-row::before {
+                content: attr(data-label);
+                font-weight: bold;
+                color: #00ff41;
+                display: block;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+            }
+        }
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 48px;
+        }
+        .location-card {
+            border: 4px solid #00ff41;
+            padding: 32px;
+            background: #111111;
+            transform: rotate(0.5deg);
+        }
+        .location-card:nth-child(2) {
+            transform: rotate(-0.5deg);
+            border-color: #ffff00;
+        }
+        .location-card h3 {
+            border-bottom: 2px solid #ffff00;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+        }
+        .location-card p {
+            color: #ffff00;
+            margin-bottom: 8px;
+        }
+        .map-placeholder {
+            width: 100%;
+            height: 200px;
+            background: repeating-linear-gradient(
+                45deg,
+                #111111,
+                #111111 10px,
+                #1a1a1a 10px,
+                #1a1a1a 20px
+            );
+            border: 3px solid #ffff00;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #00ff41;
+            margin-top: 16px;
+        }
+        footer {
+            padding: 72px;
+            border-top: 6px solid #00ff41;
+            background: #111111;
+            text-align: center;
+        }
+        footer p {
+            color: #ffff00;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        footer a {
+            color: #00ff41;
+        }
+        @media (max-width: 768px) {
+            footer {
+                padding: 36px 24px;
+            }
+        }
+        .separator {
+            width: 100%;
+            height: 6px;
+            background: #00ff41;
+            margin: 48px 0;
+        }
+        .text-accent {
+            color: #00ff41;
+        }
+        .mt-48 {
+            margin-top: 48px;
+        }
+        .mb-48 {
+            margin-bottom: 48px;
+        }
+        .gap-48 {
+            gap: 48px;
+        }
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .block {
+            display: block;
+        }
+        .negative-margin {
+            margin-left: -48px;
+            margin-right: -48px;
+        }
+        @media (max-width: 768px) {
+            .negative-margin {
+                margin-left: -24px;
+                margin-right: -24px;
+            }
+        }
+        .overlap-section {
+            margin-top: -60px;
+            position: relative;
+            z-index: 2;
+        }
+        .skew-box {
+            transform: skewX(-2deg);
+            border: 4px solid #ffff00;
+            padding: 32px;
+            background: #111111;
+        }
+        .skew-box > * {
+            transform: skewX(2deg);
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
     <header>
-      <a href="/" class="logo">KR.GEEK</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+        <a href="/" class="logo">🎤 홍대<br>코인가이드</a>
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav">
+            <a href="#guide">가이드</a>
+            <a href="#prices">가격</a>
+            <a href="#reviews">리뷰</a>
+            <a href="#locations">위치</a>
+            <a href="tel:+821062790862">문의</a>
+        </nav>
     </header>
+
     <main>
-      <div class="meta-tag">// SWISS ACCENTED GRID SYSTEM</div>
-      <h1>애니 매니아 지식 저널 및 아카이브</h1>
-      <div class="content">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>애니 매니아</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h3>
-          <p>90년대 셀 애니메이션 제작 시 빛이 뿌옇게 흐려지거나 번지는 몽환적인 효과를 내기 위해 투명 셀판 아래에 부드러운 백라이트를 대고 조리개를 조절해 이중 노출로 촬영하던 촬영 스튜...</p>
-        </a>
-      
+        <section class="hero">
+            <div class="hero-content">
+                <h1>홍대<br>코인노래방<br>완벽 가이드</h1>
+                <p>2025년 홍대 지역 코인노래방 47곳을 전수 조사했습니다. 가격, 시설, 위치, 음질 데이터를 기반으로 최적의 선택을 도와드립니다.</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span>47</span>
+                        <small>전수 조사 업소</small>
+                    </div>
+                    <div class="hero-stat">
+                        <span>₩1,000~</span>
+                        <small>1곡 최저가</small>
+                    </div>
+                    <div class="hero-stat">
+                        <span>4.2★</span>
+                        <small>평균 만족도</small>
+                    </div>
+                </div>
+                <div class="mt-48">
+                    <a href="#guide" class="btn">가이드 보기 ↓</a>
+                    <a href="tel:+821062790862" class="btn btn-secondary" style="margin-left:16px;">전화 문의</a>
+                </div>
+            </div>
+        </section>
 
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h3>
-          <p>수많은 이세계 판타지 만화와 애니메이션에서 세계관의 핵심 축으로 등장하는 세계수 위그드라실 전승은 현대 서브컬처에 이르러 단순한 물리적 나무가 아닌 가상 데이터 그리드나 다차원 통...</p>
-        </a>
-      
+        <section id="guide" class="section">
+            <div class="container">
+                <h2>📋 홍대 코인노래방<br>선정 기준</h2>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>🎯 음질 & 장비</h3>
+                        <p>전문 오디오 측정 장비를 활용하여 7개 주파수 대역의 응답 특성을 평가했습니다. JBL, Yamaha 등 메이저 브랜드 스피커 설치 업소에 가산점을 부여했습니다.</p>
+                        <ul>
+                            <li>스피커 출력 200W 이상 권장</li>
+                            <li>마이크 2채널 이상 지원</li>
+                            <li>리버브/에코 조절 가능 여부</li>
+                            <li>4K TV 또는 LED 스크린</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>💵 가격 경쟁력</h3>
+                        <p>홍대 코인노래방의 1곡당 평균 가격은 ₩1,500입니다. 시간대별, 요일별 할인 정책을 분석하여 실제 지불 비용을 계산했습니다.</p>
+                        <ul>
+                            <li>1곡 기준: ₩1,000 ~ ₩4,000</li>
+                            <li>10곡 패키지 평균 ₩12,000</li>
+                            <li>오전/오후 할인 적용 가능</li>
+                            <li>멤버십 추가 할인</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>🧹 청결도</h3>
+                        <p>방문 조사 시 마이크, 리모컨, 바닥, 좌석 등 12개 항목을 평가했습니다. 전체 업소의 68%가 청결 기준을 충족했습니다.</p>
+                        <ul>
+                            <li>마이크 커버 비치 여부</li>
+                            <li>방음재 상태 점검</li>
+                            <li>환기 시스템 가동</li>
+                            <li>정기 소독 일정 확인</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>📍 접근성</h3>
+                        <p>홍대입구역 도보 5분 이내 업소 31곳, 10분 이내 16곳으로 분류했습니다. 주차 가능 업소는 전체의 23%입니다.</p>
+                        <ul>
+                            <li>역 도보 거리 (1~10분)</li>
+                            <li>주차장 유무</li>
+                            <li>건물 내 엘리베이터</li>
+                            <li>야간 조명 및 안전성</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="phone-block">
+                    <p style="margin-bottom:16px; font-size:1.2rem;">전문 상담이 필요하신가요?</p>
+                    <a href="tel:+821062790862">📞 010-6279-0862</a>
+                </div>
+            </div>
+        </section>
 
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h3>
-          <p>디즈니의 풀 애니메이션(초당 24장)에 대비되는 동양 리미티드 애니메이션의 정수인 3코마 작화법(초당 8장 기법)은 프레임의 부족함을 독창적인 프레임 홀드 타이밍과 과장된 정지 컷...</p>
-        </a>
-      
+        <section id="prices" class="section" style="background: #0a0a0a;">
+            <div class="container">
+                <h2>💰 가격 비교 분석</h2>
+                <p style="margin-bottom:48px; font-size:1.2rem;">2025년 4월 기준 홍대 주요 코인노래방 10곳의 실제 가격 데이터입니다. 모든 가격은 부가세 포함입니다.</p>
+                <div class="price-table">
+                    <div class="price-row header">
+                        <span>업소명</span>
+                        <span>1곡 가격</span>
+                        <span>10곡 패키
 
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
 
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
       
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 KR.GEEK. ALL RIGHTS RESERVED.</div>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 포스트 메타정보포스트 기획 테마: 홍대 코인노래방 가이드 선택 전에 확인할 체크리스트와 실패 사례 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 구글 신뢰 지수 모발이식 솔루션 ### 주제아식스 젤 카야노 14 OG 아이보리 컬러웨이</p>
       </div>
-    </footer>
+      <a href="posts/checklist-002-yb1eih.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⚖️ COMPARE</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">홍대 코인노래방 가이드 vs 홍대 코인노래방 가이드 비교 — 어디가 더 좋을까? 비교 분석</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 DNA d537f72c #### 제목: 창작한 제목: "슬레이트 번호 7장의 음모론: NSA 프리즘 프로그램의 진실과 숨겨진 비밀" 관점: 비成本, 시간, 위험을 동시에 비교하는 실용 판단 구조: problem-autopsy — 실패 결과에서 원인을 거꾸</p>
+      </div>
+      <a href="posts/compare-001-yb1eih.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">파이트 클럽의 미지 깊숙이 숨은 소품 담당자 아, 진짜! 파이트 클럽 영화에서 타일러 더든이 등장하기 전, 싱글 프레임으로 삽입된 장면들은 영화 속 실제 사건이나 인물과 연관되어 있는 경우가 많습니다. 여기서는 제작비 부족으로 알리익스프레스에서 구매한 소품이 명장면이 </p>
+      </div>
+      <a href="posts/interview-002-ggdd6a.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
 </body>
 </html>
